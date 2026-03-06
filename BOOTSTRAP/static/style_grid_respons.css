@@ -1,0 +1,24 @@
+header{
+    grid-area:header;
+}
+
+nav{
+    grid-area:nav;
+}
+
+main{
+    grid-area:main;
+}
+footer{
+    grid-area:footer;
+}
+aside{
+    grid-area:aside;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 100px);
+    gap: 10px;
+}
