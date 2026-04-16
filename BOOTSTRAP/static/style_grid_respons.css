@@ -14,6 +14,8 @@ nav{
 main{
     grid-area:main;
     background-color: rgb(142, 209, 33);
+    padding: 20px;
+    min-height: 100%;
 }
 footer{
     grid-area:footer;
@@ -24,35 +26,29 @@ aside{
     background-color: rgb(255, 9, 103);
 }
 
-#box1{
-    grid-area: box1;
+.card#box1{
     background-color: salmon;
 }
-#box2{
-    grid-area: box2;
+.card#box2{
     background-color: rgb(71, 39, 36);
 }
-#box3{
-    grid-area: box3;
+.card#box3{
     background-color: rgb(33, 13, 216);
 }
-#box4{
-    grid-area: box4;
+.card#box4{
     background-color: rgb(60, 54, 114);
 }
-#box5{
-    grid-area: box5;
-    background-color: rgb(33, 13, 216);
+.card#box5{
+    background-color: rgb(255, 0, 0);
 }
-#box6{
-    grid-area: box6;
+.card#box6{
     background-color: rgb(9, 143, 16);
 }
 
 .container{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 1fr repeat(6, 100px);
+    grid-template-rows: 300px auto auto auto auto 100px auto;
     grid-template-areas:
     "header header header header header"
     ". nav nav nav ."
@@ -145,9 +141,6 @@ aside{
         border-radius: 0px;
         border: aquamarine solid;
     }
-    #box4, #box5, #box6{
-        display: none;
-    }    
 }
 * {
     box-sizing: border-box;
